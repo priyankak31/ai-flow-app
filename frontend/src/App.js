@@ -8,7 +8,6 @@ import {
   useEdgesState,
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
-
 import InputNode from "./InputNode";
 import ResultNode from "./ResultNode";
 import HistoryPanel from "./HistoryPanel";
