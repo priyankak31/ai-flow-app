@@ -40,7 +40,7 @@ Open **http://localhost:3000**
 
 ---
 
-## 🎮 How to Use
+##  How to Use
 
 1. **Type** a question in the left node
 2. **Click "▶ Run Flow"** to get an AI response
