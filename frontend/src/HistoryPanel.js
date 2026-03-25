@@ -1,11 +1,13 @@
 import React from "react";
+import BASE_URL from "./config";
+
 
 function HistoryPanel({ onClose }) {
   const [history, setHistory] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
-    fetch("/api/history")
+  fetch(`${BASE_URL}/api/history`)
       .then((res) => res.json())
       .then((data) => {
         setHistory(data);

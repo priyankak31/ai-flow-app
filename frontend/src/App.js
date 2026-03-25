@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from "react";
+import BASE_URL from "./config";
 import {
   ReactFlow,
   Background,
@@ -102,7 +103,7 @@ function App() {
     setStatusMsg("");
 
     try {
-      const res = await fetch("/api/ask-ai", {
+      const res = await fetch(`${BASE_URL}/api/ask-ai`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt }),
@@ -129,7 +130,7 @@ function App() {
     }
 
     try {
-      const res = await fetch("/api/save", {
+      const res = await fetch(`${BASE_URL}/api/save`,  {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt, response }),
